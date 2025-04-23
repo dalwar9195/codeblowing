@@ -1,0 +1,17 @@
+// Font Awesome Icon
+@mixin arrowdown(){
+    display: inline-block;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    font: var(--fa-font-solid);
+    content: '\f107';
+    position: absolute;
+}
+
+// Transition
+@mixin transition( $value ){
+    -webkit-transition: $value ease-in-out;
+    -moz-transition: $value ease-in-out;
+    -o-transition: $value ease-in-out;
+    transition: $value ease-in-out;
+}

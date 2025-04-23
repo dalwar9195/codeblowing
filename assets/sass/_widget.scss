@@ -1,0 +1,100 @@
+.sidebar {
+    .widget {
+        margin-bottom: 1rem;
+    }
+}
+.widget {
+    ul {
+        li {
+            padding: 5px;
+            span.count {
+                float: right !important;
+            }
+            a {
+                font-weight: 500;
+                color: $dark;
+                &:hover {
+                    color: $primary;
+                }
+            }
+        }
+    }
+}
+footer {
+    .widget {
+        ul {
+            li {
+                a {
+                    color: $white;
+                    &:hover {
+                        color: $primary;
+                    }
+                }
+            }
+        }
+        .about-company-widget {
+            .company-logo {
+                max-width: 150px;
+                height: auto;
+            }
+            .company-social-links {
+                a {
+                    display: inline-block;
+                    width: 35px;
+                    height: 35px;
+                    border-radius: 5px;
+                    background-color: $white;
+                    color: $primary;
+                    text-align: center;
+                    line-height: 2;
+                    &:hover {
+                        background-color: $primary;
+                        color: $white;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+.product_list_widget {
+    .widget-product-item {
+        margin-bottom: 1rem;
+        &:last-child {
+            margin-bottom: 0;
+        }
+        a {
+            display: flex;
+            gap: 10px;
+            .thumb {
+                img {
+                    width: 100px;
+                    height: auto;
+                }
+            }
+            .info {
+                span.product-title {
+                    display: block;
+                    color: $dark;
+                    font-weight: 600;
+                    font-size: 14px;
+                    @include transition(.3s);
+                }
+                span {
+                    bdi {
+                        font-size: 16px;
+                    }
+                }
+            }
+            &:hover {
+                .info {
+                    span.product-title {
+                        color: $primary;
+                    }
+                }
+            }
+        }
+    }
+    
+}

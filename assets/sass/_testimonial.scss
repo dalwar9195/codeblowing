@@ -1,0 +1,39 @@
+.testimonial-item {
+    position: relative;
+    margin-bottom: 1.5rem;
+    .quote-icon {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        i {
+            font-size: 40px;
+        }
+    }
+    .content {
+        padding: 70px 20px 40px 20px;
+        .comment-text {
+            p {
+                font-style: italic;
+            }
+        }
+    }
+    .testimonial-footer {
+        background-image: url("img/testimonial-bg.svg");
+        background-repeat: no-repeat;
+        background-position: bottom;
+        .author-thumb {
+            position: relative;
+            img {
+                width: 80px;
+                height: 80px;
+                position: absolute;
+                left: 40%;
+                top: -50%;
+            }
+        }
+        .author-info {
+            padding-top: 85px;
+            padding-bottom: 20px;
+        }
+    }
+}

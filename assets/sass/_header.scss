@@ -1,0 +1,76 @@
+.header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    .site-logo {
+        img {
+            max-width: 200px;
+            height: auto;
+        }
+    }
+    .header-button {
+        margin-right: 15px;
+        position: relative;
+        img {
+            width: 35px;
+            height: 35px;
+        }
+        span {
+            position: absolute;
+            top: -9px;
+            right: -12px;
+            display: inline-block;
+            background-color: $primary;
+            color: $white;
+            padding: 0px 7px;
+            border-radius: 50%;
+            text-align: center;
+            font-weight: bold;
+        }
+    }
+}
+
+.nav-fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 15;
+    width: 100%;
+    transition: .5s;
+    -webkit-animation: slide-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: slide-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+/**
+ * ----------------------------------------
+ * Slide Bottom Animation
+ * ----------------------------------------
+ */
+ @-webkit-keyframes slide-bottom {
+    0% {
+        -webkit-transform: translateY(-100px);
+        transform: translateY(-100px);
+    }
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+
+@keyframes slide-bottom {
+    0% {
+        -webkit-transform: translateY(-100px);
+        transform: translateY(-100px);
+    }
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+
+@media all and ( max-width: 992px ) {
+    .header-wrapper {
+        padding: 10px 0;
+    }
+}

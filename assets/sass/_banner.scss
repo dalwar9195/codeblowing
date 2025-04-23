@@ -1,0 +1,14 @@
+.banner-bg {
+    background: linear-gradient(180deg, rgba(247,255,237,1) 0%, rgba(255,255,255,0) 100%);
+}
+
+.banner-wrapper {
+    padding: 50px 0;
+    .title {
+        margin-bottom: 2rem;
+    }
+    .description {
+        font-size: 18px;
+        margin-bottom: 3rem;
+    }
+}

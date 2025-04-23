@@ -1,0 +1,26 @@
+.pricing-table-wrapper {
+    .feature-list {
+        li {
+            padding: 5px 0;
+            border-bottom: 1px solid $border-color;
+            &:first-child,
+            &:last-child {
+                border-bottom: none;
+            }
+            i {
+                font-size: 12px;
+                background-color: $dark;
+                color: $white;
+                display: inline-block;
+                height: 18px;
+                width: 18px;
+                border-radius: 50%;
+                text-align: center;
+                line-height: 1.6;
+                &.fa-minus {
+                    background-color: $danger;
+                }
+            }
+        }
+    }
+}

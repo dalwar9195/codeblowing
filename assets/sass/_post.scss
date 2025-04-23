@@ -1,0 +1,26 @@
+.post-content {
+    .entry-content {
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        ul,
+        ol,
+        p {
+            margin-bottom: 1rem;
+        }
+        ul {
+            list-style: square;
+            padding-left: 1rem;
+        }
+        ol {
+            list-style: decimal;
+            padding-left: 1rem;
+        }
+        p {
+            color: $secondary;
+        }
+    }
+}

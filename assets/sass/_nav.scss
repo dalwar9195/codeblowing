@@ -1,0 +1,91 @@
+.header-wrapper {
+    .primary-nav {
+        ul {
+            li {
+                display: inline-block;
+                a {                    
+                    font-weight: 600;
+                    padding: 25px 10px;
+                    color: $dark;
+                    &:hover {
+                        color: $primary;
+                    }
+                }
+                &.menu-item-has-children {
+                    position: relative;
+                    > a {
+                        position: relative;
+                        padding-right: 25px;
+                        &::after {
+                            @include arrowdown();
+                            top: 44%;
+                            right: 0;
+                        }
+                    }
+                    ul.sub-menu {
+                        position: absolute;
+                        top: 100%;
+                        left: 0;
+                        min-width: 200px;
+                        opacity: 0;
+                        visibility: hidden;
+                        z-index: 100;
+                        background-color: $white;
+                        @include transition(.3s);
+                        li {
+                            display: block;
+                            a {
+                                display: block;
+                                padding: 7px 15px;
+                                color: $dark;
+                                &:hover {
+                                    background-color: $primary;
+                                    color: $white;
+                                }
+                            }
+                        }
+                    }
+                    &:hover {
+                        ul.sub-menu {
+                            visibility: visible;
+                            opacity: 1;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.mean-container {
+    a.meanmenu-reveal {
+        top: -50px;
+        transition: none;
+        span {
+            background-color: $dark;
+        }
+        i {
+            color: $dark;
+        }
+    }
+    .mean-bar {
+        position: absolute;
+        left: 0;
+        top: 100%;
+        padding: 0;
+        min-height: 0;
+        z-index: 999;
+        .mean-nav {
+            margin-top: 0;
+            background-color: $dark;
+            max-height: 300px;
+            overflow-y: auto;
+            ul {
+                li {
+                    a {
+                        text-transform: capitalize;
+                    }
+                }
+            }
+        }
+    }
+}
