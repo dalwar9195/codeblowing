@@ -1,4 +1,9 @@
-    <footer>
+<?php 
+    if ( ! defined( 'ABSPATH' ) ) {
+        exit; // Exit if accessed directly.
+    }
+?>
+   <footer>
         <div class="footer-wrapper bg-dark py-5">
             <div class="container">
                 <div class="row">

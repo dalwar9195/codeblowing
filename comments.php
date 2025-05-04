@@ -15,6 +15,10 @@
  * the visitor has not yet entered the password we will
  * return early without loading the comments.
  */
+if ( ! defined( 'ABSPATH' ) ) {
+    exit; // Exit if accessed directly.
+}
+
 if (post_password_required()) {
     return;
 }

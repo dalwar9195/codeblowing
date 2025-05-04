@@ -2,6 +2,10 @@
 /**
  * Add custom fields to WooCommerce product edit screen.
  */
+if ( ! defined( 'ABSPATH' ) ) {
+    exit; // Exit if accessed directly.
+}
+
 add_action('woocommerce_product_options_general_product_data', 'codeblowing_add_custom_fields_to_product');
 
 function codeblowing_add_custom_fields_to_product() {

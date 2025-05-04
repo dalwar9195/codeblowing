@@ -1,4 +1,7 @@
 <?php
+if ( ! defined( 'ABSPATH' ) ) {
+    exit; // Exit if accessed directly.
+}
 class About_Company_Widget extends WP_Widget {
     /**
      * Constructor to initialize the widget

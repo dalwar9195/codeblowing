@@ -1,3 +1,8 @@
+<?php 
+if ( ! defined( 'ABSPATH' ) ) {
+    exit; // Exit if accessed directly.
+}
+?>
 <div class="page-banner py-5 bg-primary">
     <div class="container">
         <div class="banner-content text-center">

@@ -1,4 +1,8 @@
 <?php 
+if ( ! defined( 'ABSPATH' ) ) {
+    exit; // Exit if accessed directly.
+}
+
 require_once get_stylesheet_directory() . '/inc/update-checker/plugin-update-checker.php';
 
 $theme_update_checker = PucFactory::buildUpdateChecker(

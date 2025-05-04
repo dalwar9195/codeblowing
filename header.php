@@ -18,8 +18,8 @@
         <div class="preloader"></div>
     </div>
     <!-- Promotional Banner -->
-    <?php if (!is_admin()) : ?>
-    <div id="promo-banner" class="promo-banner bg-info">
+    <?php if ( !is_admin() ) : ?>
+    <div id="promo-banner" class="promo-banner bg-warning">
         <p>🔥 Limited-time offer! Get 30% off on all products. Use code: <strong>SALE30</strong> 🎉</p>
         <span id="close-banner">&times;</span>
     </div>

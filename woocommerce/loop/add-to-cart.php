@@ -27,7 +27,11 @@ $aria_describedby = isset( $args['aria-describedby_text'] ) ? sprintf( 'aria-des
 $args['class'] = 'btn btn-primary';
 ?>
 <div class="buttons pt-3 border-top">
-    <a href="<?php echo $live_url; ?>" class="btn btn-dark" target="_blank"><?php _e('Live Demo', 'codeblowing') ?></a>
+    <?php
+    if ( ! empty( $live_url ) ) {
+        echo '<a href="' . $live_url . '" class="btn btn-dark" target="_blank">Live Demo</a>';
+    }
+    ?>
     <?php
     echo apply_filters(
         'woocommerce_loop_add_to_cart_link', // WPCS: XSS ok.

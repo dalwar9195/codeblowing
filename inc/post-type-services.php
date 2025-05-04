@@ -1,4 +1,8 @@
 <?php 
+if ( ! defined( 'ABSPATH' ) ) {
+    exit; // Exit if accessed directly.
+}
+
 function codeblowing_services_post_type() {
     // Set up labels
     $labels = array(

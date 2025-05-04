@@ -1,4 +1,8 @@
 <?php
+if ( ! defined( 'ABSPATH' ) ) {
+    exit; // Exit if accessed directly.
+}
+
 // Custom callback function for Bootstrap comment styling
 function codeblowing_comment_callback($comment, $args, $depth) {
     $GLOBALS['comment'] = $comment;
