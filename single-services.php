@@ -5,18 +5,29 @@
 
 get_header(); ?>
 
+<?php get_template_part('template-parts/page', 'banner'); ?>
+
 <div id="primary" class="content-area">
     <main id="main" class="site-main">
-        <?php
-        while (have_posts()) : the_post();
-            // Display the service content
-            the_title('<h1>', '</h1>');
-            the_post_thumbnail(); // Display featured image
-            the_content(); // Display the content
-        endwhile;
-        ?>
+        <div class="container">
+            
+            <div class="row">
+                <div class="col-md-8">
+                    <?php
+                        while (have_posts()) : the_post();
+                            // Display the service content
+                            get_template_part('template-parts/services/single');
+                        endwhile;
+                    ?>
+                </div>
+                <div class="col-md-4">
+                    <?php get_sidebar(); ?>                 
+                </div>
+            </div>
+        </div>
+        
     </main><!-- #main -->
 </div><!-- #primary -->
 
-<?php get_sidebar(); ?>
+
 <?php get_footer(); ?>

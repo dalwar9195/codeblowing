@@ -25,7 +25,6 @@
     </div>
     <?php endif; ?>
 
-
     <header class="site-header bg-white border-bottom">
         <div class="container">
             <div class="header-wrapper">

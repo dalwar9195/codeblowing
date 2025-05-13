@@ -63,10 +63,6 @@ p {
   margin-bottom: 0;
 }
 
-p {
-  color: #6c757d;
-}
-
 h1,
 h2,
 h3,
@@ -100,6 +96,7 @@ a {
 
 img {
   width: 100%;
+  height: auto;
 }
 
 .subscribe-bg {
@@ -825,6 +822,7 @@ footer .widget .about-company-widget .company-social-links a:hover {
 }
 .product_list_widget .widget-product-item a .info span bdi {
   font-size: 16px;
+  color: #0069FF;
 }
 .product_list_widget .widget-product-item a:hover .info span.product-title {
   color: #0069FF;
