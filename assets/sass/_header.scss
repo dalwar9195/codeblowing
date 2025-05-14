@@ -9,26 +9,6 @@
             height: auto;
         }
     }
-    .header-button {
-        margin-right: 15px;
-        position: relative;
-        img {
-            width: 35px;
-            height: 35px;
-        }
-        span {
-            position: absolute;
-            top: -9px;
-            right: -12px;
-            display: inline-block;
-            background-color: $primary;
-            color: $white;
-            padding: 0px 7px;
-            border-radius: 50%;
-            text-align: center;
-            font-weight: bold;
-        }
-    }
 }
 
 .nav-fixed {

@@ -166,26 +166,6 @@ img {
   max-width: 200px;
   height: auto;
 }
-.header-wrapper .header-button {
-  margin-right: 15px;
-  position: relative;
-}
-.header-wrapper .header-button img {
-  width: 35px;
-  height: 35px;
-}
-.header-wrapper .header-button span {
-  position: absolute;
-  top: -9px;
-  right: -12px;
-  display: inline-block;
-  background-color: #0069FF;
-  color: #ffffff;
-  padding: 0px 7px;
-  border-radius: 50%;
-  text-align: center;
-  font-weight: bold;
-}
 
 .nav-fixed {
   position: fixed;

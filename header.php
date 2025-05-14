@@ -18,9 +18,9 @@
         <div class="preloader"></div>
     </div>
     <!-- Promotional Banner -->
-    <?php if ( !is_admin() ) : ?>
+    <?php if ( !is_admin() && get_theme_mod('header_promo_init', false) ) : ?>
     <div id="promo-banner" class="promo-banner bg-warning">
-        <p>🔥 Limited-time offer! Get 30% off on all products. Use code: <strong>SALE30</strong> 🎉</p>
+        <p><?php echo get_theme_mod('header_promo_text', 'Promotional text') ?></p>
         <span id="close-banner">&times;</span>
     </div>
     <?php endif; ?>
@@ -53,9 +53,11 @@
                 <div id="mobile-nav" class="d-lg-none"></div>
                 
                 <!-- Call to Action Button -->
+                <?php if ( get_theme_mod('header_btn_text', '') ) : ?>
                 <div class="header-button d-lg-block d-none">
-                    <a href="#" class="btn btn-outline-primary">Get Started</a>
+                    <a href="<?php echo esc_url( get_theme_mod('header_btn_url', '') ); ?>" class="btn btn-outline-primary"><?php echo get_theme_mod('header_btn_text', ''); ?></a>
                 </div>
+                <?php endif; ?>
             </div>
         </div>
     </header>
