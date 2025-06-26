@@ -11,6 +11,11 @@
                 </div>
             </div>
         </div>
+        <?php if ( get_theme_mod('copyright_bar_init', false ) ) : ?>
+        <div class="copyright-bar bg-dark py-3">
+            <p class="text-white text-center"><?php echo get_theme_mod('copyright_text', 'Copyright Text') ?></p>
+        </div>
+        <?php endif; ?>
     </footer>
 
     <!-- Scroll to Top -->

@@ -52,6 +52,9 @@ function codeblowing_customizer_options( $wp_customize ){
     $options->add_textarea_field( 'header_promo_text', __('Header Promo Text', 'codeblowing'), 'codeblowing-promo-banner', '🔥 Limited-time offer! Get 30% off on all products. Use code: <strong>SALE30</strong> 🎉' );
 
     $options->add_section('codeblowing-header-btn', __( 'Header Button', 'codeblowing' ), 10, 'codeblowing-options' );
+    
+    // Initiate Minicart Button
+    $options->add_checkbox_field( 'header_minicart_init', __('Show Minicart Icon', 'codeblowing'), 'codeblowing-header-btn' );
     // Header Button Link Text
     $options->add_text_field( 'header_btn_text', __('Button Text', 'codeblowing'), 'codeblowing-header-btn', 'Get Started' );
     $options->add_url_field( 'header_btn_url', __('Button URL', 'codeblowing'), 'codeblowing-header-btn', '#' );
@@ -83,6 +86,10 @@ function codeblowing_customizer_options( $wp_customize ){
 
     // Footer Section
 	$options->add_section( 'codeblowing-footer', __('Footer', 'codeblowing'), 10, 'codeblowing-options' );
+
+    
+    // Initiate Copyright
+    $options->add_checkbox_field( 'copyright_bar_init', __('Show Copyright Bar', 'codeblowing'), 'codeblowing-footer' );
 
     // Copyright Text Area
     $options->add_textarea_field( 'copyright_text', __('Copyright Text', 'codeblowing'), 'codeblowing-footer', 'All Right Reserved by <a href="#">Code Blowing</a>' );

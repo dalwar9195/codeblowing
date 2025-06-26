@@ -28,7 +28,11 @@ echo wc_get_stock_html( $product ); // WPCS: XSS ok.
 if ( $product->is_in_stock() ) : ?>
 
 	<?php do_action( 'woocommerce_before_add_to_cart_form' ); ?>
-    <a href="<?php echo $live_url; ?>" class="btn d-block btn-outline-dark" target="_blank"><?php _e('Live Preview', 'codeblowing') ?></a>
+
+    <?php if( !empty( $live_url ) ) : ?>
+    <a href="<?php echo $live_url; ?>" class="btn d-block btn-dark" target="_blank"><?php _e('Live Preview', 'codeblowing') ?></a>
+    <?php endif; ?>
+
 	<form class="cart" action="<?php echo esc_url( apply_filters( 'woocommerce_add_to_cart_form_action', $product->get_permalink() ) ); ?>" method="post" enctype='multipart/form-data'>
 		<?php do_action( 'woocommerce_before_add_to_cart_button' ); ?>
 

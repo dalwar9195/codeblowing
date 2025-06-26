@@ -54,8 +54,14 @@
                 
                 <!-- Call to Action Button -->
                 <?php if ( get_theme_mod('header_btn_text', '') ) : ?>
-                <div class="header-button d-lg-block d-none">
+                <div class="header-button align-items-center d-lg-flex d-none">
                     <a href="<?php echo esc_url( get_theme_mod('header_btn_url', '') ); ?>" class="btn btn-outline-primary"><?php echo get_theme_mod('header_btn_text', ''); ?></a>
+
+                    <?php if( class_exists( 'WooCommerce' ) && get_theme_mod('header_minicart_init', false) ) : ?>
+                    <a class="mini-cart-icon" href="<?php echo wc_get_cart_url(); ?>" title="View your cart items">
+                        <i class="fa-solid fa-cart-shopping"></i><span class="cart-count"><?php echo WC()->cart->get_cart_contents_count(); ?></span>
+                    </a>
+                    <?php endif; ?>
                 </div>
                 <?php endif; ?>
             </div>
