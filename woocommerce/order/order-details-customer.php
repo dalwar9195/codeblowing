@@ -19,7 +19,7 @@ defined( 'ABSPATH' ) || exit;
 
 $show_shipping = ! wc_ship_to_billing_address_only() && $order->needs_shipping_address();
 ?>
-<section class="woocommerce-customer-details">
+<section class="woocommerce-customer-details bg-white p-3">
 
 	<?php if ( $show_shipping ) : ?>
 
@@ -28,7 +28,7 @@ $show_shipping = ! wc_ship_to_billing_address_only() && $order->needs_shipping_a
 
 	<?php endif; ?>
 
-	<h2 class="woocommerce-column__title"><?php esc_html_e( 'Billing address', 'woocommerce' ); ?></h2>
+	<h4 class="woocommerce-column__title mb-3"><?php esc_html_e( 'Billing Details', 'woocommerce' ); ?></h4>
 
 	<address>
 		<?php echo wp_kses_post( $order->get_formatted_billing_address( esc_html__( 'N/A', 'woocommerce' ) ) ); ?>

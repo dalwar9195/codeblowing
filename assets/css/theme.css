@@ -110,6 +110,10 @@ img {
   padding: 70px 0;
 }
 
+.mx-w-500 {
+  max-width: 500px;
+}
+
 .preloader-wrapper {
   position: fixed;
   top: 0;
@@ -907,6 +911,18 @@ footer .widget .about-company-widget .company-social-links a:hover {
   font-size: 20px;
   font-weight: bold;
   margin-left: 20px;
+}
+
+.woocommerce-MyAccount-navigation ul li a {
+  display: block;
+  padding: 10px 15px;
+  color: #6c757d;
+  border-bottom: 1px solid #dee2e6;
+  font-weight: 600;
+}
+.woocommerce-MyAccount-navigation ul li.is-active a {
+  color: #ffffff;
+  background-color: #0069FF;
 }
 
 /*# sourceMappingURL=theme.css.map */

@@ -1,0 +1,19 @@
+.woocommerce-MyAccount-navigation {
+    ul {
+        li {
+            a {
+                display: block;
+                padding: 10px 15px;
+                color: $secondary;
+                border-bottom: 1px solid $border-color;
+                font-weight: 600;
+            }
+            &.is-active {
+                a {
+                    color: $white;
+                    background-color: $primary;
+                }
+            }
+        }
+    }
+}

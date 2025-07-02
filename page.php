@@ -11,7 +11,9 @@
         <?php while (have_posts()) : the_post(); ?>
             <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
                 <div class="page-content">
-                    <?php the_content(); ?>
+                    <div class="container">
+                        <?php the_content(); ?>
+                    </div>
                 </div>
             </article>
         <?php endwhile; ?>
