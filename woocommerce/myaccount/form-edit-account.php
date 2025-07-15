@@ -27,7 +27,7 @@ do_action( 'woocommerce_before_edit_account_form' ); ?>
                 <h4><?php esc_html_e( 'Account Info', 'woocommerce' ); ?></h4>
                 <p class="woocommerce-form-row woocommerce-form-row--first form-row form-row-first">
                     <label for="account_first_name"><?php esc_html_e( 'First name', 'woocommerce' ); ?>&nbsp;<span class="required">*</span></label>
-                    <input type="text" class="form-control" name="account_first_name" id="account_first_name" autocomplete="given-name" value="<?php echo esc_attr( $user->first_name ); ?>" />
+                    <input type="text" class="form-control" name="account_first_name" id="account_first_name" autocomplete="given-name" placeholder="First Name" value="<?php echo esc_attr( $user->first_name ); ?>" />
                 </p>
                 <p class="woocommerce-form-row woocommerce-form-row--last form-row form-row-last">
                     <label for="account_last_name"><?php esc_html_e( 'Last name', 'woocommerce' ); ?>&nbsp;<span class="required">*</span></label>

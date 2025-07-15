@@ -59,7 +59,7 @@
 
                     <?php if( class_exists( 'WooCommerce' ) && get_theme_mod('header_minicart_init', false) ) : ?>
                     <a class="mini-cart-icon" href="<?php echo wc_get_cart_url(); ?>" title="View your cart items">
-                        <i class="fa-solid fa-cart-shopping"></i><span class="cart-count"><?php echo WC()->cart->get_cart_contents_count(); ?></span>
+                        <i class="fa-solid fa-basket-shopping"></i><span class="cart-count"><?php echo WC()->cart->get_cart_contents_count(); ?></span>
                     </a>
                     <?php endif; ?>
                 </div>
