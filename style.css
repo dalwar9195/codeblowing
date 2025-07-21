@@ -55,7 +55,7 @@ a {
 
 .woocommerce .products .product .button {
 	color: #ffffff;
-	background-color: #1A73E8;
+	background-color: #0069FF;
 }
 .woocommerce .products .product .button:hover {
     background-color: #1662C5 !important;
@@ -97,14 +97,14 @@ a {
     font-size: 14px;
 }
 .product-item .content .info span small a:hover {
-    color: #1A73E8;
+    color: #0069FF;
 }
 .woocommerce span.onsale {
     border-radius: 0;
     line-height: inherit;
     min-height: inherit;
     padding: 5px 12px;
-    background-color: #1A73E8;
+    background-color: #0069FF;
     color: #ffffff;
     top: 0;
     left: 0;
@@ -127,7 +127,7 @@ a {
 button.single_add_to_cart_button.btn-primary {
     width: 100%;
     color: #ffffff;
-    background-color: #1A73E8;
+    background-color: #0069FF;
     padding: 5px 15px;
     font-size: 1rem;
     font-weight: 600;
@@ -136,7 +136,7 @@ button.single_add_to_cart_button.btn-primary {
     text-decoration: none;
     cursor: pointer;
     user-select: none;
-    border: 2px solid #1A73E8;
+    border: 2px solid #0069FF;
     border-radius: .375rem;
     transition: .15s;
 }
@@ -186,7 +186,7 @@ button[name="update_cart"]
 }
 .woocommerce-product-details__short-description ul li::before {
     content: '\2713';
-    color: #1A73E8;
+    color: #0069FF;
     margin-right: 5px;
 }
 .table.table-white tr td {
@@ -199,7 +199,7 @@ button[name="update_cart"]
 }
 .posted_in a:hover,
 .tagged_as a:hover {
-    color: #1A73E8;
+    color: #0069FF;
 }
 .product-single-meta tr {
     display: flex;
@@ -242,15 +242,15 @@ button[name="update_cart"]
     height: inherit;
 }
 .woocommerce div.product .woocommerce-tabs ul.tabs li.active {
-    border-bottom: 2px solid #1A73E8;
-    color: #1A73E8;
+    border-bottom: 2px solid #0069FF;
+    color: #0069FF;
 }
 .woocommerce div.product .woocommerce-tabs ul.tabs {
     border-bottom: 1px solid #cfc8d8;
 }
 .woocommerce-Tabs-panel--description a,
 .woocommerce p.stars a {
-    color: #1A73E8;
+    color: #0069FF;
 }
 .woocommerce table.shop_table {
     border: none;

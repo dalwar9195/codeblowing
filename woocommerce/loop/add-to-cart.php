@@ -24,12 +24,12 @@ global $product;
 $live_url = get_post_meta($product->get_id(), '_product_live_url', true);
 
 $aria_describedby = isset( $args['aria-describedby_text'] ) ? sprintf( 'aria-describedby="woocommerce_loop_add_to_cart_link_describedby_%s"', esc_attr( $product->get_id() ) ) : '';
-$args['class'] = 'btn btn-primary';
+$args['class'] = 'btn btn-outline-primary';
 ?>
 <div class="buttons pt-3 border-top">
     <?php
     if ( ! empty( $live_url ) ) {
-        echo '<a href="' . $live_url . '" class="btn btn-dark" target="_blank">Live Demo</a>';
+        echo '<a href="' . $live_url . '" class="btn btn-outline-dark" target="_blank">Live Demo</a>';
     }
     ?>
     <?php

@@ -76,6 +76,20 @@ if ( post_password_required() ) {
                 </div>
             </div>
         </div>
+        <div class="card mt-3">
+            <div class="card-body">
+                <?php
+                /**
+                 * Hook: woocommerce_after_single_product_summary.
+                 *
+                 * @hooked woocommerce_output_product_data_tabs - 10
+                 * @hooked woocommerce_upsell_display - 15
+                 * @hooked woocommerce_output_related_products - 20 -- Removed
+                 */
+                do_action( 'woocommerce_after_single_product_summary' );
+                ?>
+            </div>
+        </div>
     </div>
     <div class="col-xl-4">
         <div class="card">
@@ -109,20 +123,7 @@ if ( post_password_required() ) {
         ?>
     </div>
     <div class="col-xl-12">
-        <div class="card mt-3">
-            <div class="card-body">
-                <?php
-                /**
-                 * Hook: woocommerce_after_single_product_summary.
-                 *
-                 * @hooked woocommerce_output_product_data_tabs - 10
-                 * @hooked woocommerce_upsell_display - 15
-                 * @hooked woocommerce_output_related_products - 20 -- Removed
-                 */
-                do_action( 'woocommerce_after_single_product_summary' );
-                ?>
-            </div>
-        </div>
+        
         <?php if( !is_null( do_action( 'codeblowing_single_related_product' ) )) : ?>
         <div class="card mt-3">
             <div class="card-body">
