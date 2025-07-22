@@ -1,0 +1,20 @@
+.pagination {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0;
+    .page-numbers {
+        border: 2px solid $border-color;
+        display: inline-block;
+        padding: 5px 15px;
+        font-weight: 600;
+        background-color: $white;
+        &.current,
+        &:hover {
+            border-color: $primary;
+            background-color: $primary;
+            color: $white;
+        }
+    }
+}

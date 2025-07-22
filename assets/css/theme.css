@@ -952,4 +952,24 @@ footer .widget .about-company-widget .company-social-links a:hover {
   color: #6c757d;
 }
 
+.pagination {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0;
+}
+.pagination .page-numbers {
+  border: 2px solid #dee2e6;
+  display: inline-block;
+  padding: 5px 15px;
+  font-weight: 600;
+  background-color: #ffffff;
+}
+.pagination .page-numbers.current, .pagination .page-numbers:hover {
+  border-color: #0069FF;
+  background-color: #0069FF;
+  color: #ffffff;
+}
+
 /*# sourceMappingURL=theme.css.map */

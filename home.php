@@ -2,25 +2,30 @@
 /**
  * Main Index File for Code Blowing Theme
  */
+
 // Prevent direct access to this file
 if ( ! defined( 'ABSPATH' ) ) {
     exit; // Exit if accessed directly
 }
-
 get_header(); 
+
+get_template_part('template-parts/page-banner');
 ?>
 
-<main class="site-main">
+<main class="site-main py-5">
     <div class="container">
         <?php if (have_posts()) : ?>
-            <?php while (have_posts()) : the_post(); ?>
-                <?php get_template_part('template-parts/content', get_post_format()); ?>
-            <?php endwhile; ?>
+            <div class="row">
+                <?php while (have_posts()) : the_post(); ?>
+                <div class="col-lg-4 col-md-6">
+                    <?php get_template_part('template-parts/loop-blog', 'item'); ?>
+                </div>
+                <?php endwhile; ?>
+            </div>
             <!-- Pagination Links -->
             <div class="pagination">
                 <?php
                 echo paginate_links( array(
-                    // 'type'    => 'list',
                     'total'   => $wp_query->max_num_pages,
                     'current' => max( 1, get_query_var('paged') ),
                 ) );
