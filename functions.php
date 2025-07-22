@@ -32,9 +32,6 @@ function codeblowing_login_logo_title() {
 }
 add_filter( 'login_headertext', 'codeblowing_login_logo_title' );
 
-
-
-
 add_action( 'wp_enqueue_scripts', 'codeblowing_scripts' );
 
 function codeblowing_scripts(){
@@ -49,8 +46,6 @@ function codeblowing_admin_enqueue_scripts() {
     wp_enqueue_script( 'cb-admin-script', get_stylesheet_directory_uri() . '/assets/js/admin.js', array( 'jquery' ), '1.0.0', array( 'in_footer' => true ) );
 }
 add_action('admin_enqueue_scripts', 'codeblowing_admin_enqueue_scripts');
-
-
 
 require_once get_stylesheet_directory() . '/classes/class-customizer.php';
 require_once get_stylesheet_directory() . '/inc/supports.php';
