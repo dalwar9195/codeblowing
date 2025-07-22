@@ -18,7 +18,11 @@ function codeblowing_services_post_type() {
         'not_found'          => 'No Services Found',
         'not_found_in_trash' => 'No Services Found in Trash',
         'parent_item_colon'  => '',
-        'menu_name'          => 'Services'
+        'menu_name'          => 'Services',
+        'featured_image'        => __( 'Service Icon', 'codeblowing' ),
+		'set_featured_image'    => __( 'Set service icon', 'codeblowing' ),
+		'remove_featured_image' => __( 'Remove service icon', 'codeblowing' ),
+		'use_featured_image'    => __( 'Use as service icon', 'codeblowing' ),
     );
 
     // Register the post type

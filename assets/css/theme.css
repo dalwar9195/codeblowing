@@ -51,6 +51,7 @@
 
 body {
   font-size: 16px;
+  font-weight: 400;
 }
 
 h1,
@@ -88,10 +89,10 @@ a {
   display: inline-block;
   text-decoration: none;
   font-weight: 500;
-  -webkit-transition: 0.3s ease-in-out;
-  -moz-transition: 0.3s ease-in-out;
-  -o-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
+  -webkit-transition: 0.2s ease-in-out;
+  -moz-transition: 0.2s ease-in-out;
+  -o-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
 }
 
 img {
@@ -112,6 +113,10 @@ img {
 
 .mx-w-500 {
   max-width: 500px;
+}
+
+.btn {
+  padding: 10px 25px;
 }
 
 .preloader-wrapper {
@@ -923,6 +928,28 @@ footer .widget .about-company-widget .company-social-links a:hover {
 .woocommerce-MyAccount-navigation ul li.is-active a {
   color: #ffffff;
   background-color: #0069FF;
+}
+
+.service-item {
+  padding: 25px;
+}
+.service-item .service-thumb img {
+  max-width: 60px;
+  height: auto;
+}
+.service-item .service-title h4 {
+  margin: 1rem 0;
+}
+.service-item .service-title h4 a {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #001539;
+}
+.service-item .service-title h4 a:hover {
+  color: #0069FF !important;
+}
+.service-item .service-excerpt p {
+  color: #6c757d;
 }
 
 /*# sourceMappingURL=theme.css.map */

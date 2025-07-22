@@ -1,0 +1,11 @@
+body.login div#login h1 a {
+    background-image: url('../img/login-logo.png');
+    height: 100px;
+    width: 100px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border: none;
+    &:focus {
+        box-shadow: none;
+    }
+}

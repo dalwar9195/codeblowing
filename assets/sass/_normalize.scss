@@ -1,5 +1,6 @@
 body {
     font-size: 16px;
+    font-weight: 400;
 }
 
 h1,
@@ -55,4 +56,7 @@ img {
 }
 .mx-w-500 {
     max-width: 500px;
+}
+.btn {
+    padding: 10px 25px;
 }

@@ -1,0 +1,27 @@
+.service-item {
+    padding: 25px;
+    .service-thumb {
+        img {
+            max-width: 60px;
+            height: auto;
+        }
+    }
+    .service-title {
+        h4 {
+            margin: 1rem 0;
+            a {
+                font-size: 1.5rem;
+                font-weight: 600;
+                color: $dark;
+                &:hover {
+                    color: $primary !important;
+                }
+            }
+        }
+    }
+    .service-excerpt {
+        p {
+            color: $secondary;
+        }
+    }
+}

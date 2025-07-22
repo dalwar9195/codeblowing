@@ -165,7 +165,7 @@ class Codeblowing_Elementor_Blog_Widget extends \Elementor\Widget_Base {
         if ( $blog_posts->have_posts() ) : ?>
             <div class="row">
                 <?php while ( $blog_posts->have_posts() ) : $blog_posts->the_post(); ?>
-                <div class="col-md-4">
+                <div class="col-lg-4 col-md-6">
                     <div class="blog-post-item">
                         <?php if ( has_post_thumbnail() ) : ?>
                             <div class="blog-post-thumbnail">

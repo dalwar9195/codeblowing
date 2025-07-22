@@ -25,17 +25,20 @@ get_header(); ?>
                             // Display each service
                             ?>
                             <div class="col-md-4">
-                                <article id="service-item bg-white border border-1 post-<?php the_ID(); ?>" <?php post_class(); ?>>
+                                <article class="service-item mb-3 bg-white border border-1 post-<?php the_ID(); ?>" <?php post_class(); ?>>
                                     <div class="service-thumb">
-                                        <!-- <?php the_post_thumbnail('post-thumbnail'); ?> -->
+                                        <?php the_post_thumbnail('post-thumbnail'); ?>
                                     </div>
                                     <div class="service-title">
                                         <?php the_title('<h4><a class="text-dark" href="' . esc_url(get_permalink()) . '">', '</a></h4>'); ?>
                                     </div><!-- .entry-header -->
 
                                     <div class="service-excerpt">
-                                        <?php the_excerpt(); ?>
+                                        <?php echo wp_trim_words( get_the_content(), 20, ' ' ); ?>
                                     </div><!-- .entry-content -->
+                                    <div class="service-btn mt-3">
+                                        <a href="<?php echo esc_attr(get_the_permalink()); ?>" class="btn btn-outline-primary">Read More</a>
+                                    </div>
                                 </article>
                             </div>
                         <?php endwhile; ?>

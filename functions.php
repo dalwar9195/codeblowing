@@ -1,10 +1,10 @@
 <?php 
+use Codeblowing\Autoload;
 /**
  * Required functions and required files.
  *
  * @version 1.0.0
 */
-
 defined( 'ABSPATH' ) || exit;
 
 add_action( 'wp_enqueue_scripts', 'codeblowing_styles' );
@@ -16,6 +16,24 @@ function codeblowing_styles() {
     wp_enqueue_style( 'custom-style', get_stylesheet_directory_uri() . '/assets/css/theme.css' );
     wp_enqueue_style( 'theme-style', get_stylesheet_uri() );
 }
+
+add_action( 'login_enqueue_scripts', 'codeblowing_login_styles' );
+function codeblowing_login_styles() {
+    wp_enqueue_style( 'codeblowing-login', get_stylesheet_directory_uri() . '/assets/css/login-style.css', array(), null, 'all' );
+}
+
+function codeblowing_login_logo_url() {
+    return home_url(); // Link to your homepage
+}
+add_filter( 'login_headerurl', 'codeblowing_login_logo_url' );
+
+function codeblowing_login_logo_title() {
+    return 'Code Blowing';
+}
+add_filter( 'login_headertext', 'codeblowing_login_logo_title' );
+
+
+
 
 add_action( 'wp_enqueue_scripts', 'codeblowing_scripts' );
 
@@ -31,6 +49,8 @@ function codeblowing_admin_enqueue_scripts() {
     wp_enqueue_script( 'cb-admin-script', get_stylesheet_directory_uri() . '/assets/js/admin.js', array( 'jquery' ), '1.0.0', array( 'in_footer' => true ) );
 }
 add_action('admin_enqueue_scripts', 'codeblowing_admin_enqueue_scripts');
+
+
 
 require_once get_stylesheet_directory() . '/classes/class-customizer.php';
 require_once get_stylesheet_directory() . '/inc/supports.php';
