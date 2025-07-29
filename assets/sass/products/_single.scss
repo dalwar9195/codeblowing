@@ -16,3 +16,20 @@
         color: $secondary;
     }
 }
+.single-product-info {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+@media all and ( max-width: 768px ){
+    .single-product-info {
+        display: block;
+        div {
+            margin-bottom: .5rem;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+}

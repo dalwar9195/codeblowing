@@ -722,6 +722,23 @@ img {
   color: #6c757d;
 }
 
+.single-product-info {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+}
+
+@media all and (max-width: 768px) {
+  .single-product-info {
+    display: block;
+  }
+  .single-product-info div {
+    margin-bottom: 0.5rem;
+  }
+  .single-product-info div:last-child {
+    margin-bottom: 0;
+  }
+}
 .testimonial-item {
   position: relative;
   margin-bottom: 1.5rem;
@@ -764,6 +781,9 @@ img {
   margin-bottom: 1rem;
 }
 
+.widget {
+  margin-bottom: 1rem;
+}
 .widget ul li {
   padding: 5px;
 }
