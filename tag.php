@@ -10,7 +10,7 @@ get_header(); ?>
 <div class="page-header bg-primary py-5">
     <div class="container">
         <div class="banner-content">
-            <h2 class="text-center fs-1 text-white text-capitalize"><?php single_cat_title(); ?></h2>
+            <h2 class="text-center fs-1 text-white text-capitalize"><?php single_tag_title(); ?></h2>
         </div>
     </div>
 </div><!-- .page-header -->

@@ -60,3 +60,9 @@ img {
 .btn {
     padding: 10px 25px;
 }
+.page-link {
+    &:focus {
+        box-shadow: none;
+        outline: none;
+    }
+}

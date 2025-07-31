@@ -42,7 +42,7 @@ get_header(); ?>
                                 </article>
                             </div>
                         <?php endwhile; ?>
-                    <?php the_posts_navigation(); ?>
+                    <?php codeblowing_pagination(); ?>
 
                 <?php else : ?>
                     <p>No services found.</p>

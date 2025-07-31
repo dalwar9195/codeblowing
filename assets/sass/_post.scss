@@ -23,4 +23,19 @@
             color: $secondary;
         }
     }
+    .tags {
+        a {
+            color: $primary;
+            font-weight: 500;
+            border: 1px solid $primary;
+            padding: 2px 10px;
+            border-radius: 5px;
+            margin: 5px;
+            &:hover {
+                background-color: $primary;
+                color: $white;
+                border-color: $primary;
+            }
+        }
+    }
 }

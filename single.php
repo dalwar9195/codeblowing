@@ -45,7 +45,7 @@ get_header(); ?>
                                 <div class="entry-footer">
                                     <div class="tags">
                                         <!-- Display post tags if available -->
-                                        <?php the_tags('Tags: ', ', ', ''); ?>
+                                        <?php the_tags('Tags: ', '', ''); ?>
                                     </div>
                                 </div>
                             </div>
